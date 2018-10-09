@@ -80,7 +80,7 @@ const jsLoader = {
 
 // ts loader
 const tsLoader = {
-  test: /\.(ts|tsx)$/,
+  test: /(?<!\.d)\.(ts|tsx)$/,
   include: paths.appSrc,
   use: [
     {
